@@ -7,40 +7,40 @@ export const THUMB_UP_COMMENT = 'THUMB_UP_COMMENT';
 export const THUMB_DOWN_COMMENT = 'THUMB_DOWN_COMMENT';
 
 function addComment(text) {
-    return {
-        type: ADD_COMMENT,
-        id: uuid.v4(),
-        text
-    }
+  return {
+    type: ADD_COMMENT,
+    id: uuid.v4(),
+    text
+  }
 }
 
 function removeComment(id) {
-    return {
-        type: REMOVE_COMMENT,
-        id
-    }
+  return {
+    type: REMOVE_COMMENT,
+    id
+  }
 }
 
 function editComment(id, text) {
-    return {
-        type: EDIT_COMMENT,
-        id,
-        text
-    }
+  return {
+    type: EDIT_COMMENT,
+    id,
+    text
+  }
 }
 
 function upComment(id, amount) {
-    return {
-        type: THUMB_UP_COMMENT,
-        id,
-        amount
-    }
+  return {
+    type: THUMB_UP_COMMENT,
+    id,
+    amount
+  }
 }
 
 function downComment(id, amount) {
-    return {
-        type: THUMB_DOWN_COMMENT,
-        id,
-        amount
-    }
+  return {
+    type: THUMB_DOWN_COMMENT,
+    id,
+    amount
+  }
 }
